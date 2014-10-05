@@ -10,6 +10,8 @@
 
 @interface RecipeDetailViewController : UIViewController
 
+@property (nonatomic) NSManagedObject *recipe;
+
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *version;
 

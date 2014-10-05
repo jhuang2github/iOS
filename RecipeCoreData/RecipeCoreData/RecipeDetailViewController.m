@@ -26,7 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    // Mine
+    if (self.recipe) {
+        [self.name setText:[self.recipe valueForKey:@"name"]];
+        [self.version setText:[self.recipe valueForKey:@"version"]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,11 +58,18 @@
 // Mine
 - (IBAction)save:(id)sender {
     NSManagedObjectContext *context = [self managedObjectContext];
-    
-    // Create a new managed object
-    NSManagedObject *recipe = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:context];
-    [recipe setValue:self.name.text forKey:@"name"];
-    [recipe setValue:self.version.text forKey:@"version"];
+
+    if (self.recipe) {
+        // Update
+        [self.recipe setValue:self.name.text forKey:@"name"];
+        [self.recipe setValue:self.version.text forKey:@"version"];
+        
+    } else {
+        // Create a new managed object
+        self.recipe = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:context];
+        [self.recipe setValue:self.name.text forKey:@"name"];
+        [self.recipe setValue:self.version.text forKey:@"version"];
+    }
     
     NSError *error = nil;
     // Save the object to persistent store
