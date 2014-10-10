@@ -147,3 +147,48 @@
 }
 
 @end
+
+/////
+// use nib to create view
+//
+//@interface MyCustomView
+// UIView@property(strong, nonatomic)IBOutletUILabel*Label;
+//@end
+//
+//@implementation MyCustomView
+//-(id)initWithCoder:(NSCoder*)aDecoder{
+//    if((self=[super initWithCoder:aDecoder])){
+//        [self addSubview:[[[NSBundle mainBundle] loadNibNamed:@"MyCustomView"
+//                                                        owner:self
+//                                                      options:nil] objectAtIndex:0]];
+//    }
+//    return self;
+//}
+//
+//
+/////  Programmatically create view:
+//
+//-(id)initWithFrame:(CGRect)frame {
+//    self=[super initWithFrame:frame];
+//    if(self){
+//        UILabel*label1 =[[UILabel alloc]initWithFrame:CGRectMake(20,30,200,44)];
+//        label1.text =@"i am label 1";    [self addSubview:label1];
+//
+//        UILabel*label2 =[[UILabel alloc]initWithFrame:CGRectMake(20,80,200,44)];
+//        label2.text =@"i am label 2";    [self addSubview:label2];
+//    }
+//    return self;
+//}
+//
+//@implementationViewController
+//  -(void)viewDidLoad  {
+//      [super viewDidLoad];
+//      CustomView* cv =[[CustomView alloc] initWithFrame:CGRectMake(10,10,230,400)];
+//      [self.view addSubview:cv];
+//      [cv release];
+//}
+
+
+
+
+
