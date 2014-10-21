@@ -24,6 +24,9 @@
 		0E738FB719F70FC400E7430F /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E738FA719F70FC400E7430F /* thai_shrimp_cake.jpg */; };
 		0E738FB819F70FC400E7430F /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E738FA819F70FC400E7430F /* vegetable_curry.jpg */; };
 		0E738FB919F70FC400E7430F /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E738FA919F70FC400E7430F /* white_chocolate_donut.jpg */; };
+		0E738FBC19F7141200E7430F /* MySecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738FBB19F7141200E7430F /* MySecondTableViewController.m */; };
+		0E738FC119F71F7200E7430F /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E738FC019F71F7200E7430F /* SimpleTableCell.xib */; };
+		0E738FC419F71FBE00E7430F /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738FC319F71FBE00E7430F /* SimpleTableCell.m */; };
 		0ED676AF19F5756D005D2B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676AE19F5756D005D2B54 /* Foundation.framework */; };
 		0ED676B119F5756D005D2B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676B019F5756D005D2B54 /* CoreGraphics.framework */; };
 		0ED676B319F5756D005D2B54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676B219F5756D005D2B54 /* UIKit.framework */; };
@@ -39,7 +42,6 @@
 		0ED676DB19F5756E005D2B54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ED676D919F5756E005D2B54 /* InfoPlist.strings */; };
 		0ED676DD19F5756E005D2B54 /* tableCollectionJsonViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED676DC19F5756E005D2B54 /* tableCollectionJsonViewTests.m */; };
 		0ED676E819F57639005D2B54 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED676E719F57639005D2B54 /* MyTableViewController.m */; };
-		0ED676EA19F578A9005D2B54 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0ED676E919F578A9005D2B54 /* creme_brelee.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,11 @@
 		0E738FA719F70FC400E7430F /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		0E738FA819F70FC400E7430F /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		0E738FA919F70FC400E7430F /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
+		0E738FBA19F7141200E7430F /* MySecondTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySecondTableViewController.h; sourceTree = "<group>"; };
+		0E738FBB19F7141200E7430F /* MySecondTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySecondTableViewController.m; sourceTree = "<group>"; };
+		0E738FC019F71F7200E7430F /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		0E738FC219F71FBE00E7430F /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		0E738FC319F71FBE00E7430F /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
 		0ED676AB19F5756D005D2B54 /* tableCollectionJsonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableCollectionJsonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED676AE19F5756D005D2B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ED676B019F5756D005D2B54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,7 +97,6 @@
 		0ED676DC19F5756E005D2B54 /* tableCollectionJsonViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableCollectionJsonViewTests.m; sourceTree = "<group>"; };
 		0ED676E619F57639005D2B54 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		0ED676E719F57639005D2B54 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
-		0ED676E919F578A9005D2B54 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +187,13 @@
 				0ED676C319F5756D005D2B54 /* Main_iPad.storyboard */,
 				0ED676E619F57639005D2B54 /* MyTableViewController.h */,
 				0ED676E719F57639005D2B54 /* MyTableViewController.m */,
+				0E738FBA19F7141200E7430F /* MySecondTableViewController.h */,
+				0E738FBB19F7141200E7430F /* MySecondTableViewController.m */,
 				0ED676C919F5756E005D2B54 /* Images.xcassets */,
 				0ED676B519F5756D005D2B54 /* Supporting Files */,
+				0E738FC019F71F7200E7430F /* SimpleTableCell.xib */,
+				0E738FC219F71FBE00E7430F /* SimpleTableCell.h */,
+				0E738FC319F71FBE00E7430F /* SimpleTableCell.m */,
 			);
 			path = tableCollectionJsonView;
 			sourceTree = "<group>";
@@ -190,7 +201,6 @@
 		0ED676B519F5756D005D2B54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0ED676E919F578A9005D2B54 /* creme_brelee.jpg */,
 				0ED676B619F5756D005D2B54 /* tableCollectionJsonView-Info.plist */,
 				0ED676B719F5756D005D2B54 /* InfoPlist.strings */,
 				0ED676BA19F5756D005D2B54 /* main.m */,
@@ -301,13 +311,13 @@
 				0E738FAD19F70FC400E7430F /* full_breakfast.jpg in Resources */,
 				0ED676C519F5756D005D2B54 /* Main_iPad.storyboard in Resources */,
 				0E738FAB19F70FC400E7430F /* creme_brelee.jpg in Resources */,
-				0ED676EA19F578A9005D2B54 /* creme_brelee.jpg in Resources */,
 				0E738FB419F70FC400E7430F /* mushroom_risotto.jpg in Resources */,
 				0E738FB219F70FC400E7430F /* instant_noodle_with_egg.jpg in Resources */,
 				0E738F7719F70F7100E7430F /* recipes.plist in Resources */,
 				0E738FB319F70FC400E7430F /* japanese_noodle_with_pork.jpg in Resources */,
 				0E738FAF19F70FC400E7430F /* ham_and_cheese_panini.jpg in Resources */,
 				0E738FB519F70FC400E7430F /* noodle_with_bbq_pork.jpg in Resources */,
+				0E738FC119F71F7200E7430F /* SimpleTableCell.xib in Resources */,
 				0ED676CA19F5756E005D2B54 /* Images.xcassets in Resources */,
 				0ED676C219F5756D005D2B54 /* Main_iPhone.storyboard in Resources */,
 				0ED676B919F5756D005D2B54 /* InfoPlist.strings in Resources */,
@@ -334,8 +344,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED676BF19F5756D005D2B54 /* AppDelegate.m in Sources */,
+				0E738FBC19F7141200E7430F /* MySecondTableViewController.m in Sources */,
 				0ED676BB19F5756D005D2B54 /* main.m in Sources */,
 				0ED676E819F57639005D2B54 /* MyTableViewController.m in Sources */,
+				0E738FC419F71FBE00E7430F /* SimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

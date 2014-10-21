@@ -25,7 +25,7 @@
 @interface MyTableViewController ()
 
 // programmatically.
-@property (nonatomic) UITableView *tableView;
+//@property (nonatomic) UITableView *tableView;
 
 @property (nonatomic) NSArray *recipes;
 @property (nonatomic) NSArray *thumbnails;
