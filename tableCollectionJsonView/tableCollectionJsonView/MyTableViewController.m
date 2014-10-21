@@ -17,6 +17,8 @@
 // http://jslim.net/blog/2013/03/22/ios-create-uitableview-with-custom-cell-programmatically/
 // http://jainmarket.blogspot.com/2009/05/creating-custom-table-view-cell.html
 // http://teckyy.com/2013/02/creating-table-view-controllers-programmatically/
+// 4) load data from plist
+// http://www.appcoda.com/enhance-your-simple-table-app-with-property-list/
 
 #import "MyTableViewController.h"
 
