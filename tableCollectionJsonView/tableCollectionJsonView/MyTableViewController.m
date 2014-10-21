@@ -22,11 +22,14 @@
 
 #import "MyTableViewController.h"
 
-@interface MyTableViewController () {
-    NSArray *recipes;
-}
+@interface MyTableViewController ()
 
+// programmatically.
 @property (nonatomic) UITableView *tableView;
+
+@property (nonatomic) NSArray *recipes;
+@property (nonatomic) NSArray *thumbnails;
+@property (nonatomic) NSArray *prepTime;
 
 @end
 
@@ -45,17 +48,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+//    recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
 
     // load data from file:
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
-//    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    self.recipes = [dict objectForKey:@"RecipeName"];
+    self.thumbnails = [dict objectForKey:@"Thumbnail"];
+    self.prepTime = [dict objectForKey:@"PrepTime"];
 
     // programmatically create table view
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self.view addSubview:self.tableView];
+//    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+//    self.tableView.delegate = self;
+//    self.tableView.dataSource = self;
+//    [self.view addSubview:self.tableView];
 
 //    self.tableView = [self makeTableView];
 //    [self.view addSubview:self.tableView];
@@ -70,7 +76,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [recipes count];
+    return [self.recipes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,8 +88,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
 
-    cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.recipes objectAtIndex:indexPath.row];
+//    cell.detailTextLabel.text = [self.prepTime objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
+    cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor lightGrayColor] : [UIColor darkGrayColor];
     return cell;
 }
 
