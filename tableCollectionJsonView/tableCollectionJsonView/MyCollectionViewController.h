@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyCollectionViewController : UICollectionViewController<UIScrollViewDelegate>
+@interface MyCollectionViewController : UICollectionViewController
 
 @end

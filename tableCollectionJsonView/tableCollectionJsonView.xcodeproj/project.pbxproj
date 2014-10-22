@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E59A49B19F72EAC00C4CA2E /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E59A49A19F72EAC00C4CA2E /* photo-frame.png */; };
 		0E738F7719F70F7100E7430F /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E738F7619F70F7100E7430F /* recipes.plist */; };
 		0E738FAA19F70FC400E7430F /* angry_birds_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E738F9A19F70FC400E7430F /* angry_birds_cake.jpg */; };
 		0E738FAB19F70FC400E7430F /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E738F9B19F70FC400E7430F /* creme_brelee.jpg */; };
@@ -27,6 +28,7 @@
 		0E738FBC19F7141200E7430F /* MySecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738FBB19F7141200E7430F /* MySecondTableViewController.m */; };
 		0E738FC119F71F7200E7430F /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E738FC019F71F7200E7430F /* SimpleTableCell.xib */; };
 		0E738FC419F71FBE00E7430F /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738FC319F71FBE00E7430F /* SimpleTableCell.m */; };
+		0E738FCD19F7231300E7430F /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738FCC19F7231300E7430F /* MyCollectionViewController.m */; };
 		0ED676AF19F5756D005D2B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676AE19F5756D005D2B54 /* Foundation.framework */; };
 		0ED676B119F5756D005D2B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676B019F5756D005D2B54 /* CoreGraphics.framework */; };
 		0ED676B319F5756D005D2B54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED676B219F5756D005D2B54 /* UIKit.framework */; };
@@ -55,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E59A49A19F72EAC00C4CA2E /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
 		0E738F7619F70F7100E7430F /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		0E738F9A19F70FC400E7430F /* angry_birds_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angry_birds_cake.jpg; sourceTree = "<group>"; };
 		0E738F9B19F70FC400E7430F /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 		0E738FC019F71F7200E7430F /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 		0E738FC219F71FBE00E7430F /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		0E738FC319F71FBE00E7430F /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		0E738FCB19F7231300E7430F /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		0E738FCC19F7231300E7430F /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
 		0ED676AB19F5756D005D2B54 /* tableCollectionJsonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableCollectionJsonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED676AE19F5756D005D2B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ED676B019F5756D005D2B54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +131,7 @@
 		0E738F9919F70FC400E7430F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				0E59A49A19F72EAC00C4CA2E /* photo-frame.png */,
 				0E738F9A19F70FC400E7430F /* angry_birds_cake.jpg */,
 				0E738F9B19F70FC400E7430F /* creme_brelee.jpg */,
 				0E738F9C19F70FC400E7430F /* egg_benedict.jpg */,
@@ -189,6 +195,8 @@
 				0ED676E719F57639005D2B54 /* MyTableViewController.m */,
 				0E738FBA19F7141200E7430F /* MySecondTableViewController.h */,
 				0E738FBB19F7141200E7430F /* MySecondTableViewController.m */,
+				0E738FCB19F7231300E7430F /* MyCollectionViewController.h */,
+				0E738FCC19F7231300E7430F /* MyCollectionViewController.m */,
 				0ED676C919F5756E005D2B54 /* Images.xcassets */,
 				0ED676B519F5756D005D2B54 /* Supporting Files */,
 				0E738FC019F71F7200E7430F /* SimpleTableCell.xib */,
@@ -317,6 +325,7 @@
 				0E738FB319F70FC400E7430F /* japanese_noodle_with_pork.jpg in Resources */,
 				0E738FAF19F70FC400E7430F /* ham_and_cheese_panini.jpg in Resources */,
 				0E738FB519F70FC400E7430F /* noodle_with_bbq_pork.jpg in Resources */,
+				0E59A49B19F72EAC00C4CA2E /* photo-frame.png in Resources */,
 				0E738FC119F71F7200E7430F /* SimpleTableCell.xib in Resources */,
 				0ED676CA19F5756E005D2B54 /* Images.xcassets in Resources */,
 				0ED676C219F5756D005D2B54 /* Main_iPhone.storyboard in Resources */,
@@ -347,6 +356,7 @@
 				0E738FBC19F7141200E7430F /* MySecondTableViewController.m in Sources */,
 				0ED676BB19F5756D005D2B54 /* main.m in Sources */,
 				0ED676E819F57639005D2B54 /* MyTableViewController.m in Sources */,
+				0E738FCD19F7231300E7430F /* MyCollectionViewController.m in Sources */,
 				0E738FC419F71FBE00E7430F /* SimpleTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

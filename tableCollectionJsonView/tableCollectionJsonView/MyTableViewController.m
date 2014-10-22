@@ -17,8 +17,36 @@
 // http://jslim.net/blog/2013/03/22/ios-create-uitableview-with-custom-cell-programmatically/
 // http://jainmarket.blogspot.com/2009/05/creating-custom-table-view-cell.html
 // http://teckyy.com/2013/02/creating-table-view-controllers-programmatically/
+//
 // 4) load data from plist
 // http://www.appcoda.com/enhance-your-simple-table-app-with-property-list/
+//
+// 5) load from json / network
+// http://www.thedarkdev.com/web-service-apps-in-ios7-json-with-uitableview.html
+// http://stackoverflow.com/questions/2968642/populate-uitableview-from-json
+// http://nscookbook.com/2013/03/ios-programming-recipe-16-populating-a-uitableview-with-data-from-the-web/
+//
+// 6) UICollectionView (**)
+// i) (**) http://www.appcoda.com/ios-programming-uicollectionview-tutorial/
+//https://developer.apple.com/library/ios/samplecode/CollectionView-Simple/Introduction/Intro.html#//apple_ref/doc/uid/DTS40012860-Intro-DontLinkElementID_2
+// ii) search bar with segue
+//
+//navi controller and table view
+//http://www.appcoda.com/use-storyboards-to-build-navigation-controller-and-table-view/
+//segue and pass data
+//http://www.appcoda.com/storyboards-ios-tutorial-pass-data-between-view-controller-with-segue/
+//tab bar
+//http://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/
+//search bar
+//http://www.appcoda.com/search-bar-tutorial-ios7/
+//http://www.raywenderlich.com/16873/how-to-add-search-into-a-table-view
+//other courses:
+//http://www.appcoda.com/ios-programming-course/
+//
+// iii) Photo viewer:
+//***
+//http://www.raywenderlich.com/19788/how-to-use-nsoperations-and-nsoperationqueues
+
 
 #import "MyTableViewController.h"
 
@@ -91,7 +119,9 @@
     cell.textLabel.text = [self.recipes objectAtIndex:indexPath.row];
 //    cell.detailTextLabel.text = [self.prepTime objectAtIndex:indexPath.row];
     cell.imageView.image = [UIImage imageNamed:[self.thumbnails objectAtIndex:indexPath.row]];
+//    cell.imageView.frame = CGRectMake(0, 0, 80, 70);
     cell.backgroundColor = indexPath.row % 2 == 0 ? [UIColor lightGrayColor] : [UIColor darkGrayColor];
+
     return cell;
 }
 
@@ -123,6 +153,18 @@
 //    
 //    return tableView;
 //}
+
+#pragma mark - navigate
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        NSString *content = ((UITableViewCell *)sender).textLabel.text;
+        NSLog(@"%@", content);
+
+//        ImageCollectionViewController *destVC = segue.destinationViewController;
+//        destVC.search = content;
+    }
+}
 
 
 @end
